@@ -1,0 +1,5 @@
+{
+  "name": "supabase-proxy",
+  "compatibility_date": "2026-10-19",
+  "main": "worker.js"
+}
