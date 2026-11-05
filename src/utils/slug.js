@@ -1,7 +1,8 @@
 export const toSlug = (title) => {
-  if (!title) return ""; // اگه title خالی بود، رشته خالی برگردون
+  if (!title) return "";
   return title
     .toLowerCase()
+    .trim()
     .replace(/\s+/g, "-")
-    .replace(/[^a-z0-9-]/g, "");
+    .replace(/[^\w\u0600-\u06FF-]/g, ""); // ← حروف فارسی و انگلیسی رو نگه دار
 };

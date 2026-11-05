@@ -1,7 +1,6 @@
 import React, { useState, useCallback, useMemo } from "react";
 import { useProjectViews } from "../hooks/useProjectViews";
 import PropTypes from "prop-types";
-import SwipeableViews from "react-swipeable-views-react-18-fix";
 import { useTheme } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
 import Tabs from "@mui/material/Tabs";
@@ -282,11 +281,7 @@ export default function FullWidthTabs() {
           </Tabs>
         </AppBar>
 
-        <SwipeableViews
-          axis={theme.direction === "rtl" ? "x-reverse" : "x"}
-          index={value}
-          onChangeIndex={setValue}
-        >
+        <div>
           <TabPanel value={value} index={0} dir={theme.direction}>
             {/* ✅ Search & Filter */}
             <SearchAndFilter
@@ -385,7 +380,7 @@ export default function FullWidthTabs() {
               </div>
             </div>
           </TabPanel>
-        </SwipeableViews>
+        </div>
       </Box>
     </div>
   );
