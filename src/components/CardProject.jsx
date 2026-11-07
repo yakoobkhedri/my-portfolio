@@ -45,7 +45,7 @@ const CardProject = ({ Img, Title, Description, Link: ProjectLink, id, category,
                            dark:bg-gradient-to-r dark:from-blue-200 dark:via-purple-200 dark:to-pink-200 dark:bg-clip-text">
               {Title}
               {category && (
-                <span className="inline-block px-2 py-1 text-xs rounded-full bg-indigo-500/20 text-indigo-600 dark:text-indigo-300">
+                <span className="inline-block px-2 py-1 ml-2 text-xs rounded-full bg-indigo-500/20 text-indigo-600 dark:text-indigo-300">
                   {category}
                 </span>
               )}
