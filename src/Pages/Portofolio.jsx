@@ -313,14 +313,14 @@ export default function FullWidthTabs() {
                 ))}
               </div>
             </div>
-            {projects.length > initialItems && (
+            {/* {projects.length > initialItems && (
               <div className="mt-6 w-full flex justify-start">
                 <ToggleButton
                   onClick={() => toggleShowMore('projects')}
                   isShowingMore={showAllProjects}
                 />
               </div>
-            )}
+            )} */}
             {/* پیام "چیزی پیدا نشد" */}
             {filteredProjects.length === 0 && (
               <div className="text-center py-10">

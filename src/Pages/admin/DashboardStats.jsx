@@ -90,7 +90,7 @@ const DashboardStats = () => {
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
 
-      <div className="min-h-screen bg-gray-50 dark:bg-[#030014] px-[5%] lg:px-[10%] pt-28 pb-20">
+      <div className="min-h-screen bg-gray-50 dark:bg-[#030014] px-[5%] lg:px-[10%] pt-14 pb-20">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -200,7 +200,7 @@ const DashboardStats = () => {
           ) : (
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {/* Activity Chart */}
-              <div className="bg-white dark:bg-white/5 rounded-2xl p-6 border border-gray-200 dark:border-white/10">
+              <div className="bg-white dark:bg-white/5 rounded-2xl p-2 md:p-6 border border-gray-200 dark:border-white/10">
                 <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-4">
                   Last 7 Days Activity
                 </h3>
@@ -208,7 +208,7 @@ const DashboardStats = () => {
               </div>
 
               {/* Message Status */}
-              <div className="bg-white dark:bg-white/5 rounded-2xl p-6 border border-gray-200 dark:border-white/10">
+              <div className="bg-white dark:bg-white/5 rounded-2xl p-2 md:p-6 border border-gray-200 dark:border-white/10">
                 <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-4">
                   Message Status
                 </h3>
@@ -216,7 +216,7 @@ const DashboardStats = () => {
               </div>
 
               {/* Category Distribution */}
-              <div className="bg-white dark:bg-white/5 rounded-2xl p-6 border border-gray-200 dark:border-white/10">
+              <div className="bg-white dark:bg-white/5 rounded-2xl p-2 md:p-6 border border-gray-200 dark:border-white/10">
                 <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-4">
                   Projects by Category
                 </h3>
@@ -224,7 +224,7 @@ const DashboardStats = () => {
               </div>
 
               {/* Top Viewed Projects */}
-              <div className="bg-white dark:bg-white/5 rounded-2xl p-6 border border-gray-200 dark:border-white/10">
+              <div className="bg-white dark:bg-white/5 rounded-2xl p-2 md:p-6 border border-gray-200 dark:border-white/10">
                 <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-4">
                   Most Viewed Projects
                 </h3>

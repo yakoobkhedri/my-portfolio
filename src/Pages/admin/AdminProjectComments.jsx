@@ -104,7 +104,7 @@ const AdminProjectComments = () => {
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
 
-      <div className="min-h-screen bg-gray-50 dark:bg-[#030014] px-[5%] lg:px-[10%] pt-28 pb-20">
+      <div className="min-h-screen bg-gray-50 dark:bg-[#030014] px-[5%] lg:px-[10%] pt-14 pb-20">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -202,7 +202,7 @@ const AdminProjectComments = () => {
                 key={comment.id}
                 className="bg-white dark:bg-white/5 rounded-2xl p-5 border border-gray-200 dark:border-white/10 hover:border-cyan-500/30 transition-all group"
               >
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-4 flex-wrap">
                   {/* Avatar */}
                   {comment.profile_image ? (
                     <img

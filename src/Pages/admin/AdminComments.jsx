@@ -125,7 +125,7 @@ const AdminComments = () => {
                 <meta name="robots" content="noindex, nofollow" />
             </Helmet>
 
-            <div className="min-h-screen bg-gray-50 dark:bg-[#030014] px-[5%] lg:px-[10%] pt-28 pb-20">
+            <div className="min-h-screen bg-gray-50 dark:bg-[#030014] px-[5%] lg:px-[10%] pt-14 pb-20">
                 {/* Header */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

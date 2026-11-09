@@ -128,7 +128,7 @@ const AdminProjects = () => {
                 <meta name="robots" content="noindex, nofollow" />
             </Helmet>
 
-            <div className="min-h-screen bg-gray-50 dark:bg-[#030014] px-[5%] lg:px-[10%] pt-28 pb-20">
+            <div className="min-h-screen bg-gray-50 dark:bg-[#030014] px-[5%] lg:px-[10%] pt-14 pb-20">
                 {/* Header */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -203,14 +203,14 @@ const AdminProjects = () => {
                                 key={project.id}
                                 className="bg-white dark:bg-white/5 rounded-2xl p-4 border border-gray-200 dark:border-white/10 hover:border-indigo-500/30 transition-all group"
                             >
-                                <div className="flex items-center gap-4">
+                                <div className="flex items-center gap-4 flex-wrap sm:flex-nowrap">
                                     {/* Image */}
-                                    <div className="w-20 h-20 rounded-lg overflow-hidden bg-gray-100 dark:bg-white/5 flex-shrink-0">
+                                    <div className="sm:w-20 w-full sm:h-20 h-52 rounded-lg overflow-hidden bg-gray-100 dark:bg-white/5 flex-shrink-0">
                                         {project.image_url ? (
                                             <img
                                                 src={project.image_url}
                                                 alt={project.title}
-                                                className="w-full h-full object-cover"
+                                                className="w-full h-full"
                                             />
                                         ) : (
                                             <div className="w-full h-full flex items-center justify-center">

@@ -124,7 +124,7 @@ const AdminUsers = () => {
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
 
-      <div className="min-h-screen bg-gray-50 dark:bg-[#030014] px-[5%] lg:px-[10%] pt-28 pb-20">
+      <div className="min-h-screen bg-gray-50 dark:bg-[#030014] px-[5%] lg:px-[10%] pt-14 pb-20">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -234,7 +234,7 @@ const AdminUsers = () => {
                 key={user.id}
                 className="bg-white dark:bg-white/5 rounded-2xl p-5 border border-gray-200 dark:border-white/10 hover:border-indigo-500/30 transition-all"
               >
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4 flex-wrap">
                   {/* Avatar */}
                   {user.avatar_url ? (
                     <img

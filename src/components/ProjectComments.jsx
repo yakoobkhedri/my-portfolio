@@ -156,7 +156,7 @@ const CommentForm = memo(({ projectId, onSubmit, isSubmitting }) => {
       </div>
 
       {/* Image Upload */}
-      <div className="flex items-center gap-3">
+      {/* <div className="flex items-center gap-3">
         {imagePreview ? (
           <div className="flex items-center gap-3 flex-1">
             <img src={imagePreview} alt="Preview" className="w-10 h-10 rounded-full object-cover border-2 border-indigo-500/50" />
@@ -190,7 +190,7 @@ const CommentForm = memo(({ projectId, onSubmit, isSubmitting }) => {
           accept="image/*"
           className="hidden"
         />
-      </div>
+      </div> */}
 
       {/* Submit */}
       <button
@@ -239,13 +239,13 @@ const ProjectComments = ({ projectId }) => {
 
   const handleCommentSubmit = useCallback(async ({ project_id, user_name, content, imageFile }) => {
     try {
-      const profileImageUrl = await uploadImage(imageFile);
+      // const profileImageUrl = await uploadImage(imageFile);
 
       await addCommentMutation.mutateAsync({
         project_id: project_id,
         user_name: user_name,
         content: content,
-        profile_image: profileImageUrl,
+        // profile_image: profileImageUrl,
         created_at: new Date().toISOString()
       });
 
